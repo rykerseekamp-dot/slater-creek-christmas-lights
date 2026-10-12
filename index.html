@@ -1,3 +1,6 @@
+In GitHub’s `index.html` editor, press **Ctrl+A**, paste all the code below, then click **Commit changes**.
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,20 +20,25 @@
     @media(max-width:430px){.wrap{width:min(100% - 28px,1120px)}.brand{font-size:.93rem}.brand-mark{width:38px;height:38px}.nav .pill{padding:10px 13px;font-size:.85rem}.hero h1{font-size:3.15rem}.form{grid-template-columns:1fr;padding:18px}.field.full{grid-column:auto}}
     .roof,.garland{display:none!important}.roof-lights{position:absolute;right:3%;bottom:164px;width:min(430px,100%);height:auto;z-index:5;overflow:visible}.roof-lights path{fill:none;stroke:#47694a;stroke-width:4;stroke-linecap:round}.roof-lights circle{stroke:#f2e9d8;stroke-width:2;filter:drop-shadow(0 0 6px currentColor)}
     @media(max-width:760px){.roof-lights{bottom:127px}}
+    .house{z-index:3;width:min(330px,74%);right:14%}.roof-lights{right:14%;width:min(330px,74%)}
+    .tree{position:absolute;bottom:24px;width:82px;height:164px;z-index:2}.tree:before{content:"";position:absolute;inset:0 0 14px;background:#214a37;clip-path:polygon(50% 0,67% 24%,59% 24%,79% 47%,69% 47%,94% 73%,82% 73%,100% 91%,0 91%,18% 73%,6% 73%,31% 47%,21% 47%,41% 24%,33% 24%);filter:drop-shadow(0 8px 5px #081a1640)}.tree:after{content:"";position:absolute;left:43%;bottom:0;width:14%;height:30px;background:#745744}.tree.left{left:1%}.tree.right{right:1%}.tree-light{position:absolute;width:8px;height:8px;border-radius:50%;background:#f8d16f;box-shadow:0 0 9px 2px #f8d16f90;z-index:1}.tree-light:nth-of-type(1){top:25%;left:48%}.tree-light:nth-of-type(2){top:41%;left:27%;background:#e98071;box-shadow:0 0 9px 2px #e9807190}.tree-light:nth-of-type(3){top:48%;left:65%;background:#9ed1b1;box-shadow:0 0 9px 2px #9ed1b190}.tree-light:nth-of-type(4){top:63%;left:40%}.tree-light:nth-of-type(5){top:74%;left:71%;background:#e98071;box-shadow:0 0 9px 2px #e9807190}
+    .door-handle{position:absolute;z-index:4;left:62%;bottom:50px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:1px solid #b47e2c;box-shadow:0 0 4px #f0c774}
+    .price-table-wrap{max-width:760px;margin:auto;overflow:hidden;background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.price-table{width:100%;border-collapse:collapse;text-align:left}.price-table th,.price-table td{padding:17px 22px;border-bottom:1px solid var(--line)}.price-table th{background:var(--pine);color:white;font-size:.92rem}.price-table td:last-child{font-weight:750;color:var(--pine);white-space:nowrap}.price-table tr:last-child td{border-bottom:0}.price-note{max-width:760px;margin:15px auto 0;color:var(--muted);font-size:.9rem}.price-table tbody tr:nth-child(even){background:#f7f2e8}
+    @media(max-width:760px){.house{width:min(270px,78%);right:9%;bottom:15px}.roof-lights{bottom:127px;right:9%;width:min(270px,78%)}.tree{width:64px;height:130px;bottom:15px}.tree.right{right:0}.price-table th,.price-table td{padding:13px 14px}}
   </style>
 </head>
 <body>
   <div class="topline">Serving DFW and nearby communities · Holiday season inquiries welcome</div>
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="Slater Creek Christmas Lights home"><span class="brand-mark">✦</span><span>Slater Creek<small>Christmas Lights</small></span></a>
-    <nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#contact" class="pill">Request a quote</a></nav>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how-it-works">How it works</a><a href="#contact" class="pill">Request a quote</a></nav>
   </header>
   <main id="top">
     <section class="hero">
       <div class="snow"></div>
       <div class="wrap hero-grid">
         <div><div class="eyebrow">Make your home shine</div><h1>A little more<br><em>Christmas magic.</em></h1><p>Bring a warm holiday glow to your home with Christmas light installation from your neighbors in DFW.</p><div class="hero-actions"><a class="pill" href="#contact">Get a free quote</a><a class="text-link" href="#services">Explore services ↓</a></div></div>
-        <div class="hero-art" role="img" aria-label="A cozy home dressed in colorful Christmas lights"><div class="moon"></div><div class="house"><div class="window"></div><div class="window two"></div></div><svg class="roof-lights" viewBox="0 0 430 88" aria-hidden="true"><path d="M6 78 L215 4 L424 78"/><circle cx="28" cy="70" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="78" cy="52" r="6" fill="#e98071" style="color:#e98071"/><circle cx="128" cy="34" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="178" cy="17" r="6" fill="#9ed1b1" style="color:#9ed1b1"/><circle cx="228" cy="9" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="278" cy="26" r="6" fill="#e98071" style="color:#e98071"/><circle cx="328" cy="44" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="378" cy="62" r="6" fill="#9ed1b1" style="color:#9ed1b1"/></svg></div>
+        <div class="hero-art" role="img" aria-label="A cozy home with colorful Christmas lights and two lit trees"><div class="tree left"><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i></div><div class="tree right"><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i><i class="tree-light"></i></div><div class="house"><div class="window"></div><div class="window two"></div><span class="door-handle"></span></div><svg class="roof-lights" viewBox="0 0 430 88" aria-hidden="true"><path d="M6 78 L215 4 L424 78"/><circle cx="28" cy="70" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="78" cy="52" r="6" fill="#e98071" style="color:#e98071"/><circle cx="128" cy="34" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="178" cy="17" r="6" fill="#9ed1b1" style="color:#9ed1b1"/><circle cx="228" cy="9" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="278" cy="26" r="6" fill="#e98071" style="color:#e98071"/><circle cx="328" cy="44" r="6" fill="#f8d16f" style="color:#f8d16f"/><circle cx="378" cy="62" r="6" fill="#9ed1b1" style="color:#9ed1b1"/></svg></div>
       </div>
     </section>
     <section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">Holiday lighting</div><h2>Make the season feel special</h2><p>Thoughtful lighting helps your home feel welcoming all season long. Tell us what you have in mind and we’ll talk through a plan for your home.</p></div><div class="cards">
@@ -38,6 +46,7 @@
       <article class="card"><div class="icon">✳</div><h3>Custom holiday displays</h3><p>Share your style and ideas, from a simple warm welcome to a brighter seasonal look.</p></article>
       <article class="card"><div class="icon">❄</div><h3>Seasonal service</h3><p>Ask about installation, in-season adjustments, and taking lights down after the holidays.</p></article>
     </div></div></section>
+    <section id="pricing" class="band"><div class="wrap"><div class="section-head"><div class="eyebrow">Price guide</div><h2>Suggested starting prices</h2><p>Use these estimates to get a feel for the investment. Final pricing depends on your home and the display you choose.</p></div><div class="price-table-wrap"><table class="price-table"><thead><tr><th>House type</th><th>Suggested starting price</th></tr></thead><tbody><tr><td>Small, one-story</td><td>$200–$250</td></tr><tr><td>Medium, one-story</td><td>$250–$350</td></tr><tr><td>Large, one-story</td><td>$350–$450</td></tr><tr><td>Two-story house</td><td>$350–$500+</td></tr></tbody></table></div><p class="price-note">Request a quote for pricing specific to your home.</p></div></section>
     <section id="how-it-works" class="band"><div class="wrap"><div class="section-head"><div class="eyebrow">Easy as 1, 2, 3</div><h2>From first idea to festive glow</h2><p>Start with a few details about your home and the look you’re hoping for.</p></div><div class="steps"><article class="step"><b>1</b><h3>Tell us about your home</h3><p>Send a few details and let us know what kind of display you have in mind.</p></article><article class="step"><b>2</b><h3>Get your quote</h3><p>We’ll follow up to discuss the project and provide pricing for your home.</p></article><article class="step"><b>3</b><h3>Enjoy the holidays</h3><p>Once the details are set, get ready to enjoy a little extra Christmas magic.</p></article></div></div></section>
     <section><div class="wrap"><div class="cta"><div><h2>Ready to light up the holidays?</h2><p>Let’s talk about a festive look for your home in DFW and the surrounding area.</p></div><a class="pill" href="#contact">Request a quote</a></div></div></section>
     <section id="contact"><div class="wrap contact-grid"><div class="contact-copy"><div class="eyebrow" style="color:var(--red)">Get in touch</div><h2>Let’s plan something bright.</h2><p>Share your name, neighborhood, and what you’re picturing. We’ll get back to you about your holiday lighting quote.</p><div class="contact-note">Serving DFW and nearby communities. Pricing is provided by quote.</div></div>
@@ -66,6 +75,4 @@
   </script>
 </body>
 </html>
-
-
-10:16 PM
+```
